@@ -1,0 +1,297 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My port folio</title>
+    <link rel="stylesheet" href="{% static '/index.css' %}">
+
+
+<!-- styles and icons -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="index.js" charset="utf-8"></script>
+  </head>
+  <body  data-spy ="scroll" data-target = 'navbar'>
+       <!-- navbar -->
+       <div id="header">
+         <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+           <div class="container">
+             <button type="button" name="button" class="navbar-toggler" data-toggle = "collapse" data-target ="#Navbar">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <a href="#" class="navbar-brand"><h1>PortFolio</h1></a>
+             <div class="collapse navbar-collapse" id="Navbar">
+               <ul class="navbar-nav ml-auto">
+                 <li class="nav-item"><a href="#Home" class="nav-link active">Home</a></li>
+                 <li class="nav-item"><a href="#About" class="nav-link">About Me</a></li>
+                 <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+                 <li class="nav-item"><a href="#Experience" class="nav-link">Eperience</a></li>
+                 <li class="nav-item"><a href="#Contacts" class="nav-link">Contacts</a></li>
+               </ul>
+             </div>
+           </div>
+         </nav>
+       </div>
+
+
+       <!-- home  -->
+       <!-- <div id="bg-image" class="image">
+         <div class="home" id="Home" >
+           <div class="container">
+             <div class="row">
+               <div class="col">
+                 <h1>hey there</h1>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div> -->
+
+
+<!--
+       <div class="home_intro text-center">
+         <h1>Hi There Am steve</h1>
+       </div> -->
+       <div id="bg-image"></div>
+
+      </div>
+  <!--/ Introduction /-->
+        <!-- about -->
+        <div id="About">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div id="AboutData">
+                  <div class="card bg-white">
+                    <div class="card-title my-5">
+                      <div class="media">
+                        <img src="{% static '/stev.jpg' %}" alt="My Image" height="250" width="250" class="img-fluid rounded-top">
+                        <div class="media-body">
+                        <h3 class="display-5 ml-5">I'm Steven</h3>
+                        <p class="text-muted ml-5">Data Anasyst and Backend Developer</p>
+                        <div class="container">
+                          <table>
+                            <tr class="table table-responsive ml-4">
+                              <td class="text-muted">Age</td>
+                              <td>:</td>
+                              <td>21 Yrs</td>
+                            </tr>
+                            <tr class="table table-responsive ml-4">
+                              <td class="text-muted">Email</td>
+                              <td>:</td>
+                              <td>stiveckamahs@gmail.com</td>
+                            </tr>
+                            <tr class="table table-responsive ml-4">
+                              <td class="text-muted">phone</td>
+                              <td>:</td>
+                              <td>0798355947</td>
+                            </tr>
+                          </table>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-danger ">
+                      <a href="#"> <i class="fa fa-facebook fa-2x mx-3 "></i></a>
+                      <a href="#"> <i class="fa fa-twitter fa-2x mx-3 "></i></a>
+                      <a href="#"> <i class="fa fa-github fa-2x mx-3 "></i></a>
+                      <a href="#"> <i class="fa fa-linkedin  fa-2x mx-3 "></i></a>
+                      <a href="#"> <i class="fa fa-whatsapp  fa-2x mx-3 "></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col">
+              <span class=" bg-danger text-white">About Me</span>
+              <hr class="bg-danger">
+              <div class="">
+                <p class="lead">
+                  I  am a Second Year  Student at Multimedia University of Kenya for a Bachelors Degree leading to Computer Science.
+                </p>
+                <p class="lead">
+                  Through the exposure of the school resources ,friends and Tech events ,I have been able to gain enough and
+                  started self taught web development on January 2019 .I have gained Skills through Youtube Videos , FreecodeCamp Stack ,Overflow and Google.Through My Skills I can now make websites using HTML ,CSS and Bootstrap framework ,Javascript .
+                  I  use Django(python Framework) as my primary tool for back end development, I also got some skills in PHP.
+                </p>
+                <p class="lead">
+                  Through my Positivity to technology , I have developed Intrest in  Machine Learning and Artificial Intelligence .These  fields will change the world in future and solve many societal problems that humans are facing currently or may face in future.
+                </p>
+                <p class="lead">
+                  I'm more skilled  Data Analysis and Back end Developement which are my primary fields.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+
+       <!-- Skills -->
+
+       <div id="Skills" class="mt-5">
+         <div class="container">
+           <span class="bg-primary text-white">My Skills</span><hr class="bg-primary">
+           <div class="row">
+             <div class="col">
+               <div class="card bg-white">
+                 <h3 class="ml-3 my-3">HTML</h3>
+                 <div class="progress mx-3">
+                   <div class="progress-bar bg-success" style="width:90%">90%</div>
+                 </div>
+
+                 <h3 class="ml-3 my-3">Python</h3>
+                 <div class="progress mx-3">
+                   <div class="progress-bar bg-success" style="width:930%">93%</div>
+                 </div>
+
+                 <h3 class="ml-3 my-3">CCS</h3>
+                 <div class="progress mx-3">
+                   <div class="progress-bar bg-success" style="width:67%">67%</div>
+                 </div>
+
+                 <h3 class="ml-3 my-3">PHP</h3>
+                 <div class="progress mx-3">
+                   <div class="progress-bar bg-success" style="width:70%">70%</div>
+                 </div>
+
+                 <h3 class="ml-3 my-3">Java</h3>
+                 <div class="progress mx-3">
+                   <div class="progress-bar bg-success" style="width:55%">55%</div>
+                 </div>
+
+                 <h3 class="ml-3 my-3">MYSQL</h3>
+                 <div class="progress mx-3">
+                   <div class="progress-bar bg-success" style="width:83%">83%</div>
+                 </div>
+
+
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+
+
+       <!-- experience -->
+       <div class="" id="Experience">
+         <div class="container mt-5">
+           <span class="bg-success text-white">Experience</span><hr class="bg-success">
+           <div class="row">
+
+             <div class="col-lg-6 ">
+               <div class="card bg-white ">
+                 <img src="{% static '/hq.png' %}" alt="" class="img-fluid   py-3" >
+                 <h3 class="text-center text-success">Full Stack Developer</h3>
+                 <p class="p-2 text-justify lead">Participated in bulding a group (HIQ) platform for sharing ideas and communication.
+                 Here is the Link <a href="http://hiqwebapp.herokuapp.com">HIQ Platform</a>
+                 </div>
+             </div>
+
+
+             <div class="col-lg-6">
+               <div class="card bg-white ">
+                 <img src="{% static '/build4sdg.png' %}" alt="" class="img-fluid  d-flex m-auto py-3" >
+                 <h3 class="text-center text-success">Back End Web Developer</h3>
+                 <p class="p-3 text-justify lead">
+                   I participated in the build4SDG challange by Andela and facebook . I acted as a backend developer.We developed an agriculture based platform.
+                   Here is the code link for the product. <a href="https://farmzone168.herokuapp.com/forum">FarmZone</a>
+                 </p>
+                 </div>
+             </div>
+
+
+            <div class="col-lg-6 mt-5">
+              <div class="card bg-white ">
+                <!-- <img src="cofee.jpeg" alt="" class="img-fluid  d-flex m-auto py-3" > -->
+                <h3 class="text-center text-success">Data Analytics</h3>
+                <p class="p-2 text-justify lead">
+                  I have been reqularly practising on Data analytics projects and also python.
+                  Check some of them published on my github page. <a href="https://github.com/Stephen-Kamau?tab=repositories">My Github Url</a>
+                </p>
+                </div>
+            </div>
+
+             <div class="col-lg-6 mt-5">
+               <div class="card bg-white ">
+                 <img src="{% static '/covid19.png' %}" alt="" class="img-fluid  d-flex m-auto py-3" >
+                 <h3 class="text-center text-success">Data Analysis</h3>
+                 <p class="p-3 text-justify lead">
+                   I have been working with many dataset to try get insights from them and aslo build models for future occurences.
+                   Here is a link for <b><a href="https://github.com/Stephen-Kamau/Covid19_Analysis/blob/master/Corona.ipynb">COVID19 Analysis</a>
+                 </p>
+                 </div>
+             </div>
+
+
+
+           </div>
+         </div>
+       </div>
+
+
+
+       <!-- ciontact -->
+       <div class="paralax-mf footer-paralax bg-image sect-mt4 route" id="Contacts" style="background-image: url({% static 'footer.jpg' %})">
+         <div class="container mt-5">
+           <span class="bg-dark text-white ">Contact Me</span> <hr class="bg-dark">
+           <div class="row">
+             <div class="col">
+               <div class="card bg-white ">
+                 <div class="card-header">
+                   <h4 class="my-4"> Contact Me Below </h4>
+
+                   <form class="form" action="/sendEmail/" method="POST">
+                     {% csrf_token %}
+
+                      <div class="form-group">
+                        <input type="text" placeholder="Your Name" name="name" class="form-control"  value="">
+                      </div>
+
+                      <div class="form-group">
+                        <input type="email" placeholder="Your Email" name="email" class="form-control"  value="">
+                      </div>
+
+                      <div class="form-group">
+                        <textarea name="text" class="form-control" placeholder="Write Something Here ....."></textarea>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="submit" name="button" class="btn btn-success text-white" />
+                      </div>
+
+                   </form>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+
+
+       <!-- footer -->
+
+       <div class="container-fluid bg-dark ">
+         <div class="row">
+           <div class="col">
+             <div class="container">
+                  <p class="text-white pt-3 text-center">Create by : @steve  &copy; 2020</p>
+             </div>
+           </div>
+         </div>
+       </div>
+  </body>
+</html>
