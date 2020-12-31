@@ -91,7 +91,7 @@ hpack==3.0.0
 html5lib==1.0.1
 htmlmin==0.1.12
 httpie==2.2.0
-httplib2==0.14.0
+httplib2==0.18.0
 hyperframe==5.2.0
 hyperlink==19.0.0
 icalendar==4.0.3
