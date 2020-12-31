@@ -13,7 +13,7 @@ psycopg2==2.8.4
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 djangorestframework==3.11.0
-Django==3.0.7
+Django==1.11.29
 Pygments==2.6.1
 Markdown==3.2.1
 coreapi==2.3.3
