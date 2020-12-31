@@ -159,7 +159,7 @@ nbformat==5.0.4
 netaddr==0.7.19
 networkx==2.4
 nltk==3.5
-notebook==6.0.2
+notebook==6.1.5
 numba==0.48.0
 numexpr==2.7.1
 numpy==1.17.4
