@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.views.decorators.csrf import csrf_exempt
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import smtplib
@@ -7,30 +7,36 @@ from django.core.mail import send_mail , EmailMessage
 from django.conf import settings
 import smtplib
 from django.conf import settings
+from django.http import JsonResponse
 sender = settings.EMAIL_HOST_USER
+
+
 def index(request):
     return render(request , 'index.html')
 
 
 
+@csrf_exempt
 def send_email(request):
-    print(request.method)
-    if request.method == 'POST':
-        # execute
+    if request.method == "POST":
         email = request.POST['email']
         text = request.POST['text']
         name = request.POST['name']
+        phone = request.POST['phone']
         receiver = 'stiveckamash@gmail.com'
-        # sender = 'stephen.kamau@attorn.tech'
-        print(name)
+        sender = 'stephen.kamau@attorn.tech'
 
         try:
             msg = f"""
-            <p>Hi Its <p> <h2>{name} \n</h2><br>
-            <p>Email : {email}  \n<br></p>
-            <p>Message : {text} \n<br></p>"""
+            <h2>YOu Have Received an Email From Website Contack Form \n
+            Here are the Senders Details</h2>
+            <h3>Name  : {name}<br />
+            Email : {email}  <br /></p>
+            Message : {text} <br /></h3>
+            """
+
             message = EmailMessage(
-            "Hi there Its me passing here<br>" ,
+            "Hello PortFolio Contact Form Message" ,
             msg,
             sender,
             [receiver],
@@ -39,14 +45,9 @@ def send_email(request):
             message.send(fail_silently=False)
             print("successs")
         except Exception as e:
-            print("errrorroror" , e)
+            JsonResponse({"msg":'Failed to send the email' ,"status":0 })
 
         else:
-            return render(request , 'index.html')
+            return JsonResponse({"msg":'Message Send Successfully' ,"status":1 })
 
-
-
-
-
-
-    return render(request , 'index.html')
+    return JsonResponse({"msg":'Failed to send the email' ,"status":0 })
