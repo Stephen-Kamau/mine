@@ -1,3 +1,6 @@
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700');
 @import url(css/animate.css);
 @import url(css/camera.css);
@@ -20,7 +23,7 @@ body {
 }
 
 body.demos .section {
-    background: url(images/bg.png) repeat top center #f2f3f5;
+    /* background: url(images/bg.png) repeat top center #f2f3f5; */
 }
 
 body.demos .section-title img {
@@ -2191,7 +2194,7 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/bg.png) no-repeat center center #333333;
+    /* background: url(images/bg.png) no-repeat center center #333333; */
 }
 
 #contact .section-title p {
