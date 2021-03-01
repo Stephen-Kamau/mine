@@ -13,9 +13,11 @@
 body {
     color: #999999;
     font-size: 14px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono';
     line-height: 1.80857;
 }
+
+
 
 html,
 body {
@@ -339,7 +341,7 @@ a img.aligncenter {
 -------------------------------------------------------------------*/
 
 .main-banner {
-    height: 100%;
+    height: 115%;
     position: relative;
 }
 
@@ -367,17 +369,18 @@ a img.aligncenter {
     vertical-align: middle;
     position: relative;
     z-index: 1;
+    /* top: 50px; */
 }
 
 .heading h1 {
     color: #ffffff;
     font-weight: 700;
-    font-size: 62px;
+    font-size: 55px;
     text-transform: uppercase;
 }
 
 .heading p {
-    font-size: 18px;
+    font-size: 21px;
     padding: 20px 0px;
 }
 
@@ -385,6 +388,13 @@ a img.aligncenter {
     color: ffffff;
 }
 
+#about p{
+  font-size: 20px;
+}
+/*
+.desc{
+  background-color: red;
+} */
 .cd-words-wrapper {
     display: inline-block;
     position: relative;
@@ -456,6 +466,7 @@ xclip
 #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
+    height: 80px;
     background-color: #333333;
 }
 
@@ -661,10 +672,15 @@ xclip
 
 .services-inner-box {
     padding: 15px;
+    height: 350px;
     background: #ffffff;
     margin-bottom: 30px;
+    font-weight: bold;
+    box-shadow: 1px 1px 16px 0px rgba(0,0,0,0.66);
 }
+.serviceCol{
 
+}
 .ser-icon {
     width: 90px;
     height: 90px;
@@ -678,7 +694,7 @@ xclip
 }
 
 .services-inner-box h2 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -694,6 +710,8 @@ xclip
 
 .language-section {
     display: flex;
+    /* background-color: red; */
+    margin-left: 150px;
     align-items: center;
 }
 
@@ -1143,7 +1161,7 @@ xclip
 
 .icon-wrapper p small:after {
     content: "\f105";
-    font-family: FontAwesome;
+    /* font-family: FontAwesome; */
     margin-left: 5px;
     font-size: 11px;
 }
@@ -2327,7 +2345,7 @@ select.mobile-device {
     background-color: #1f1f1f;
     box-sizing: border-box;
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding: 30px 0px;
     overflow: hidden;
 }
@@ -2355,6 +2373,8 @@ select.mobile-device {
 .footer-distributed .footer-company-name {
     font-weight: 300;
     margin: 0 10px;
+    margin-left: 370px;
+    /* background-color: red; */
     color: #666;
     padding: 0;
 }
