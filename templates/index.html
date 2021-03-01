@@ -14,10 +14,11 @@
 <meta name="description" content="This is a website for stephen kamau portfolio">
 <meta name="author" content="stephen kamau wairimu">
 <link rel="stylesheet"  type="text/css" href="{% static 'css/bootstrap.min.css'  %}">
-<link rel="stylesheet" type="text/css"  href="{% static  './css/index.css' %}">
+<link rel="stylesheet" type="text/css"  href="{% static  'css/index.css' %}">
 <link rel="stylesheet" type="text/css"  href="{% static  'css/responsive.css' %}">
+<link rel="stylesheet" type="text/css"  href="{% static  'css/flaticon.css' %}">
 <link rel="stylesheet" type="text/css"  href="{% static  'css/custom.css' %}">
-<link rel="stylesheet"  type="text/css" href="{% static  './fonts/fontawesome-free-5.10.2-web/css/all.min.css' %}">
+<link rel="stylesheet"  type="text/css" href="{% static  'fonts/fontawesome-free-5.10.2-web/css/all.min.css' %}">
 <script src="{% static 'js/modernizr.js' %}"></script>
 </head>
 <body id="page-top" class="politics_version">
@@ -65,14 +66,14 @@
         </div>
     </nav>
 
-    <section id="home" class="main-banner parallaxie" style="background: url('{% static 'uploads/banner1.jpeg' %}');">
+    <section id="home" class="main-banner parallaxie" style="background: url('{% static 'uploads/road.jpg' %}');">
         <div class="heading">
             <h1>Hey I'm Steve</h1>
             <p>"I am a Back End Developer who is based in Nairobi. I work as a Back End  Web <br/>
               Developer helping Organisations and also Businesses to build their API  <br/>
               using Django, Flask all backed with REST FRAMEWORK Database Design<br />
               implimentation and maintainance, MongoDB ,Postgresql ,JavaScript ,<br/>
-               Mysql and with basic skills in HTML5 , Reactjs , CCS3 etc"</p>
+               Mysql and with Intermediate skills in HTML5 , Reactjs , CCS3 etc"</p>
             <p>
               "I'm Also Quite skilled in Data Analysis , Machine Learning,  Deep Learning and<br/>
               Computer Vision to create  data driven solutions that can be used <br/>
@@ -98,16 +99,18 @@
         </div>
     </section>
 
+
     <div id="about" class="section wb">
         <div class="container">
-            <div class="row">
+            <div class="row" >
+
                 <div class="col-md-6">
-                    <div class="message-box text text-info">
+                    <div class="message-box text text-info" >
                         <h2 class="text text-danger text-bold">About Steve....</h2>
-                        <p>
+                        <p id="desc">
                             Back End Software Engineer Skilled in solving simple to complex problems faced in an Organisations regarding their business process ,
                             Data analysist skilled in get hidden information from data provided and also create models for future use.
-                            I'm Skilled in Python , Machine Leaning , Deep Learning , Flask , Django , React , JavaScript , Java etc.
+                            I'm Skilled in Python , Machine Leaning, NLP , Deep Learning , Flask , Django , React , JavaScript , Java etc.
                         </p>
                         <ul class="icons">
                             <li><a href="https://web.facebook.com/stivec.kamash" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -144,7 +147,7 @@
             </div>
             <!-- end title -->
 
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-4">
                     <div class="services-inner-box">
                         <div class="ser-icon">
@@ -152,7 +155,8 @@
                         </div>
                         <h2 class="text text-bold">Back End Design And Development</h2>
                         <p>
-                            Get all your website backend developed with secure endpoints that are well documented for easy consumption by Front End engineers.
+                            Get all your website backend developed with secure endpoints that are well
+                            documented for easy consumption by Front End engineers.
                         </p>
                     </div>
                 </div>
@@ -164,7 +168,8 @@
                         </div>
                         <h2 class="text text-bold">Responsive Web Design and Development</h2>
                         <p>
-                            Designing Better User Experience Interfaces that are responsive and Easy To use . Designs can also be coded
+                            Designing Better User Experience Interfaces that are responsive
+                            and Easy To use . Designs can also be coded
                             into good websites
                         </p>
                     </div>
@@ -191,8 +196,8 @@
                         </div>
                         <h2 class="text text-bold">Web Admin Support</h2>
                         <p>
-                            websites Running on cloud platforms needs regular support for updates and maintainances . I can manage your websites
-                            from where it is Hosted to make sure it serves consumers without problems
+                            Websites Running on cloud platforms needs regular support for updates and maintainances.
+                            I can manage your websites from where it is Hosted to make sure it serves consumers without problems
                         </p>
                     </div>
                 </div>
@@ -216,9 +221,9 @@
                         </div>
                         <h2 class="text text-bold">Computer Vision And NLP</h2>
                         <p>
-                            For Computer vision ,I analyse your images , get informations from it , can automate your
-                            Office security cameras to perfom specific tasks .
-                            Using NLP I can create chatbot for automating customer support in your Organisations to answer specific questions. I can also build recommentation systems based on data provided.
+                            For Computer vision ,I analyse  images , get informations from it.
+                            Using NLP I can create chatbot for automating customer support in your
+                            Organisations . I can also build recommentation systems based on data provided.
                         </p>
                     </div>
                 </div>
@@ -439,8 +444,8 @@
         <div class="container">
             <div class="footer-distributed">
                 <div class="footer-left">
-                    <p class="footer-links">
-                    </p>
+                    <!-- <p class="footer-links">
+                    </p> -->
                     <p class="footer-company-name">All Rights Reserved. &copy; 2021 <a href="#">steve</a></p>
                 </div>
             </div>
