@@ -3,6 +3,9 @@
 	#mainNav {
 		background-color: #333333;
 	}
+	.politics_version{
+		overflow-x:hidden;
+	}
 	.navbar-dark .navbar-brand{
 		width: 55%;
 	}
@@ -83,10 +86,10 @@
 		border-color: rgba(255,255,255);
 	}
 	.heading h1{
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.heading p{
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.cd-headline.clip span{
 		font-size: 20px;
@@ -157,10 +160,10 @@
 		border-color: rgba(255,255,255);
 	}
 	.heading h1{
-		font-size: 28px;
+		font-size: 20px;
 	}
 	.heading p{
-		font-size: 14px;
+		font-size: 11px;
 	}
 	.cd-headline.clip span{
 		font-size: 20px;
